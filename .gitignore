@@ -1,0 +1,60 @@
+# Arquivos temporários e logs
+*~
+*.sw[mnpcod]
+*.tmp
+*.tmp.*
+*.log
+log.txt
+
+# Ionic
+/.ionic
+/www
+/platforms
+/plugins
+
+# Angular / build
+/.angular
+/.angular/cache
+/dist
+/tmp
+/out-tsc
+/.sourcemaps
+/.versions
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+# package-lock.json  # <-- Descomente se quiser ignorar
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# VSCode
+.vscode/
+
+# Testes
+/coverage
+/libpeerconnection.log
+testem.log
+
+# Misc
+/.nx
+/.nx/cache
+/connect.lock
+/typings
+.sass-cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+$RECYCLE.BIN/
+UserInterfaceState.xcuserstate
