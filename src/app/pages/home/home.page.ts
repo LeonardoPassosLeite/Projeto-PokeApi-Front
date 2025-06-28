@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
-import { PokemonListComponent } from '../../components/pokemon-list/pokemon-list.component';
+import { PokemonListComponent } from '../../components/features/pokemon-list/pokemon-list.component';
 
 @Component({
   selector: 'app-home',

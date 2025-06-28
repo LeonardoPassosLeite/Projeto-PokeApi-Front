@@ -1,0 +1,21 @@
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.input-underline {
+  width: 200px;
+  font-size: 16px;
+  padding: 8px 4px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: #000;
+  transition: border-color 0.3s;
+}
+
+.input-underline:focus-within {
+  border-bottom: 2px solid #3b82f6;
+  outline: none;
+}

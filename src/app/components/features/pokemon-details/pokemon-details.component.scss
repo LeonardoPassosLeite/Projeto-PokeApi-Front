@@ -1,0 +1,123 @@
+@import "../../../../global.scss";
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+.pokemon-card {
+  width: 100%;
+  max-width: 850px;
+  background: $white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  margin: 0 auto;
+
+  .card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .image-container.gamer-highlight {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, $bg-light, $bg-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+
+    .pokemon-image {
+      width: 140px;
+      height: auto;
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 140px;
+      height: 140px;
+
+      .pokemon-image {
+        width: 80px;
+      }
+    }
+  }
+
+  .info-container {
+    flex: 1;
+
+    .title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .type-badge,
+    .ability-badge {
+      display: inline-block;
+      background-color: $gray-light;
+      border-radius: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      margin: 0 0.2rem 0.3rem 0;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .stats-section {
+      margin-top: 1rem;
+
+      .stats-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .stat-item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .stat-name {
+            width: 120px;
+            font-weight: 500;
+          }
+
+          .stat-bar {
+            background-color: $gray;
+            height: 10px;
+            flex: 1;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .stat-fill {
+              background-color: $green;
+              height: 100%;
+              transition: width 0.3s ease;
+            }
+          }
+
+          .stat-value {
+            width: 40px;
+            text-align: right;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

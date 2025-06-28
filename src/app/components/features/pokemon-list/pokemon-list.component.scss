@@ -1,0 +1,32 @@
+.grid-wrapper{
+  padding: 50px;
+}
+
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0.5rem;
+  text-align: center;
+  background: linear-gradient(145deg, #f8f8f8, #ffffff);
+  border: 1px solid #ddd;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+}
